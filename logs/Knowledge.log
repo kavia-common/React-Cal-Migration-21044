@@ -1,0 +1,74 @@
+2025-10-22 08:48:30,753 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-10-22 08:48:31,055 - Knowledge - INFO - Starting Knowledge Graph processing with 50 threads
+2025-10-22 08:48:31,272 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-10-22 08:48:32,833 - Knowledge - INFO - load persisted knowledge: begin
+2025-10-22 08:48:33,006 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-10-22 08:48:33,166 - Knowledge - INFO - load persisted knowledge: end
+2025-10-22 08:48:33,338 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2025-10-22 08:48:33,560 - Knowledge - INFO - Redis support added with prefix knowledge:b5669e9:
+2025-10-22 08:48:33,817 - Knowledge - INFO - load persisted docinfo: begin
+2025-10-22 08:48:34,016 - Knowledge - INFO - load persisted docinfo: end
+2025-10-22 08:48:34,217 - Knowledge - INFO - Populating ingest queue with source files...
+2025-10-22 08:48:34,423 - Knowledge - INFO - Added 1 files from /app/data/T0031/21044/b5669e9/React-Cal-Migration-21044 to ingest queue
+2025-10-22 08:48:34,583 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2025-10-22 08:48:34,792 - Knowledge - INFO - knowledge worker kw1 start
+2025-10-22 08:48:34,953 - Knowledge - INFO - [kw1] Queue=1, InProgress=0, PendingWorkers=0/1, Completed=0/1 (0.0%)
+2025-10-22 08:48:35,149 - Knowledge - INFO - Dynamic batch size: 1 for queue=1
+2025-10-22 08:48:35,320 - Knowledge - INFO - Worker kw1 processing /app/data/T0031/21044/b5669e9/React-Cal-Migration-21044/README.md
+2025-10-22 08:48:35,526 - Knowledge - INFO - Fast-tracked /app/data/T0031/21044/b5669e9/React-Cal-Migration-21044/README.md (ext=.md, size=42)
+2025-10-22 08:48:35,698 - Knowledge - INFO - Processing batch of 1 files
+2025-10-22 08:48:35,883 - Knowledge - INFO - process ingested knowledge for /app/data/T0031/21044/b5669e9/React-Cal-Migration-21044/README.md
+2025-10-22 08:48:36,155 - Knowledge - INFO - Knowledge creation complete
+2025-10-22 08:48:36,294 - Knowledge - INFO - ==================================================
+2025-10-22 08:48:36,526 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-10-22 08:48:36,746 - Knowledge - INFO - ==================================================
+2025-10-22 08:48:36,910 - Knowledge - INFO - Total processing time: 5.54 seconds (0.09 minutes)
+2025-10-22 08:48:37,077 - Knowledge - INFO - Files processed: 0
+2025-10-22 08:48:37,308 - Knowledge - INFO - Processing rate: 0.00 files/second
+2025-10-22 08:48:37,475 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2025-10-22 08:48:37,699 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2025-10-22 08:48:37,859 - Knowledge - INFO - LLM Processing: 0.00s (0.0%)
+2025-10-22 08:48:38,039 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2025-10-22 08:48:38,227 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2025-10-22 08:48:38,420 - Knowledge - INFO - WebSocket Communication: 0.00s (0.0%)
+2025-10-22 08:48:38,609 - Knowledge - INFO - Other Overhead: 5.54s (100.0%)
+2025-10-22 08:48:38,782 - Knowledge - INFO - 
+[LLM_STATS]
+2025-10-22 08:48:38,933 - Knowledge - INFO - Total LLM calls: 0
+2025-10-22 08:48:39,167 - Knowledge - INFO - Average LLM response time: 0ms
+2025-10-22 08:48:39,337 - Knowledge - INFO - Average prompt tokens: 0.0
+2025-10-22 08:48:39,547 - Knowledge - INFO - Average completion tokens: 0.0
+2025-10-22 08:48:39,751 - Knowledge - INFO - Total prompt tokens: 0
+2025-10-22 08:48:39,948 - Knowledge - INFO - Total completion tokens: 0
+2025-10-22 08:48:40,136 - Knowledge - INFO - Total LLM cost: $0.0000
+2025-10-22 08:48:40,365 - Knowledge - INFO - 
+[DATABASE_STATS]
+2025-10-22 08:48:40,588 - Knowledge - INFO - MongoDB operations: 0
+2025-10-22 08:48:40,823 - Knowledge - INFO - Redis operations: 0
+2025-10-22 08:48:40,995 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2025-10-22 08:48:41,179 - Knowledge - INFO - WebSocket messages sent: 0
+2025-10-22 08:48:41,366 - Knowledge - INFO - 
+[WORKER_STATS]
+2025-10-22 08:48:41,560 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2025-10-22 08:48:41,752 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2025-10-22 08:48:41,944 - Knowledge - INFO - ==================================================
+2025-10-22 08:48:42,127 - Knowledge - INFO - ==================================================
+2025-10-22 08:48:42,353 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-10-22 08:48:42,541 - Knowledge - INFO - ==================================================
+2025-10-22 08:48:42,738 - Knowledge - INFO - Total processing time: 11.39 seconds (0.19 minutes)
+2025-10-22 08:48:42,957 - Knowledge - INFO - Files processed: 1 of 1
+2025-10-22 08:48:43,149 - Knowledge - INFO - Processing rate: 0.09 files/second
+2025-10-22 08:48:43,340 - Knowledge - INFO - WebSocket messages sent: 0
+2025-10-22 08:48:43,551 - Knowledge - INFO - MongoDB operations: 1
+2025-10-22 08:48:43,715 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2025-10-22 08:48:43,861 - Knowledge - INFO - LLM costs: $0.0000
+2025-10-22 08:48:44,058 - Knowledge - INFO - Prompt tokens: 0
+2025-10-22 08:48:44,250 - Knowledge - INFO - Completion tokens: 0
+2025-10-22 08:48:44,412 - Knowledge - INFO - Updating org costs, total cost: 0
+2025-10-22 08:48:44,898 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 240, Duration: 0ms
+2025-10-22 08:48:45,100 - Knowledge - INFO - Saving knowledge to Redis...
+2025-10-22 08:48:45,300 - Knowledge - INFO - Knowledge saved to Redis successfully
