@@ -18,7 +18,7 @@ Modern React calculator migrated from a jQuery implementation.
 
 2. Run the app (Vite)
    - `npm run dev`
-   - Open http://localhost:5173
+   - Open http://localhost:3000
 
 3. Build
    - `npm run build` (unit tests are run with Vitest; test files are excluded from the TypeScript build)

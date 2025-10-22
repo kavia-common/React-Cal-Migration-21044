@@ -4,7 +4,15 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173
+    // Bind to all interfaces and enforce port 3000 for preview readiness
+    host: true,
+    port: 3000,
+    strictPort: true
+  },
+  preview: {
+    host: true,
+    port: 3000,
+    strictPort: true
   },
   test: {
     environment: 'jsdom',
