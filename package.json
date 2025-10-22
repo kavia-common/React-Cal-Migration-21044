@@ -7,8 +7,12 @@
     "dev": "vite",
     "build": "tsc -noEmit && vite build",
     "preview": "vite preview",
-    "test": "vitest run",
+    "pretest": "node -e \"try{const a=JSON.parse(process.env.npm_config_argv||'{}');if(a&&a.original){console.log('(pretest) original args:',a.original.join(' '));}}catch(e){console.log('(pretest) args parse skipped');}\"",
+    "test": "vitest run --reporter=basic --",
     "test:watch": "vitest",
+    "test:ci": "vitest run --reporter=basic --",
+    "ci-test": "vitest run --reporter=basic --",
+    "posttest": "echo \"(posttest) ignoring extra args: $npm_config_argv\"",
     "lint": "echo \"lint step not configured\""
   },
   "dependencies": {
