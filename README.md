@@ -2,6 +2,11 @@
 
 Modern React calculator migrated from a jQuery implementation.
 
+Note: The Vite dev and preview servers bind to 0.0.0.0 on port 3000 with strictPort enabled. Access the app via:
+- http://localhost:3000 (local)
+- http://0.0.0.0:3000 (container bridge)
+- Health endpoints: /health (dev), /health.txt and /health.html (preview)
+
 ## Features
 - Component architecture: Calculator (container), Display, Keypad, Button.
 - Pure calc engine in `src/utils/calcEngine.ts`.
